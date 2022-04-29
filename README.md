@@ -1,6 +1,6 @@
 ![Ikke-navngivet](https://user-images.githubusercontent.com/93089744/165878518-562a9524-4f64-43c7-b362-9c4442b5a1e6.png)
 
-
+NOTE: Shepherd was made for the Raspberry pi 4 with a WiFi Dongle that supports monitor mode!
 
 # Shepherd
 Shepherd WiFi Jammer (BETA)
