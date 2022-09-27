@@ -25,4 +25,5 @@ Picture of the programs menu:
 
 
 
-![Ikke-navngivet](https://user-images.githubusercontent.com/93089744/165878709-417b9dc4-c7d3-4ff7-81c5-90d0b1907af7.png)
+![Unavngivet](https://user-images.githubusercontent.com/93089744/192637875-f878e299-2659-4db2-872e-fbc678460022.png)
+
